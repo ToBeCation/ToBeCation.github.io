@@ -67,6 +67,17 @@ background-attachment: fixed;"
     <font size="3"color="white">©2022 ToBeCation 版本 v0.3公开测试版</font>
 <center>
     <div>
+          </head>
+  <body>
+    <div class="old-browser-tip"></div>
+    <script>
+      if (
+        window.__SERVER_CONFIG__ &&
+        window.__SERVER_CONFIG__.isModern === false
+      ) {
+        document.querySelector('.old-browser-tip').innerHTML =
+          '<div class="title">当前浏览器版本较低，为保证您的使用体验，建议使用最新版本的浏览器访问。</div>'
+      }
 </script><html><head>
     
 
